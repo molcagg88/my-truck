@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "My Truck",
+    "slug": "my-truck",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    //"icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    /**"splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },**/
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourdomain.mytruck"
+    },
+    "android": {
+      /**"adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },**/
+      "package": "com.yourdomain.mytruck",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "YOUR_GOOGLE_MAPS_API_KEY"
+        }
+      }
+    },
+    "web": {
+      "config": {
+        "firebase": {
+          "apiKey": "AIzaSyBsG4ws9geMOZDiIQ9lLwlDopGUYwBgBSc",
+          "authDomain": "my-truck-bcd1d.firebaseapp.com",
+          "projectId": "my-truck-bcd1d",
+          "storageBucket": "my-truck-bcd1d.firebasestorage.app",
+          "messagingSenderId": "177310607889",
+          "appId": "1:177310607889:web:921f764b641ad8c727dfb0"
+        }
+      },
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow My Truck to use your location."
+        }
+      ]
+    ]
+  }
+}

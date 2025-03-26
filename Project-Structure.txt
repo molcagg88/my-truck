@@ -1,0 +1,118 @@
+truck-app/
+├── app.json
+├── App.js                         # Updated with AuthProvider and ToastProvider
+├── babel.config.js
+├── package.json
+├── assets/
+│   ├── images/
+│   ├── fonts/
+│   └── icons/
+├── src/
+│   ├── api/
+│   │   ├── auth.js                # Implemented with Firebase auth methods
+│   │   ├── customer.js
+│   │   ├── driver.js
+│   │   ├── affiliate.js
+│   │   ├── orders.js
+│   │   ├── payments.js
+│   │   └── notifications.js
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── Button.js
+│   │   │   ├── Card.js
+│   │   │   ├── Input.js
+│   │   │   ├── LoadingIndicator.js
+│   │   │   ├── MapView.js
+│   │   │   ├── Modal.js
+│   │   │   ├── Rating.js
+│   │   │   ├── StatusBar.js
+│   │   │   └── Toast.js           # New: Toast notification component
+│   │   ├── customer/
+│   │   │   ├── BookingForm.js
+│   │   │   ├── TruckList.js
+│   │   │   ├── OrderCard.js
+│   │   │   └── PaymentOptions.js
+│   │   ├── driver/
+│   │   │   ├── JobCard.js
+│   │   │   ├── TripControls.js
+│   │   │   ├── EarningsSummary.js
+│   │   │   └── TruckRegistrationForm.js
+│   │   └── affiliate/
+│   │       ├── ReferralLinkCard.js
+│   │       ├── EarningsChart.js
+│   │       └── CommissionSummary.js
+│   ├── context/
+│   │   ├── AuthContext.js         # Implemented with Firebase auth
+│   │   ├── LocationContext.js
+│   │   ├── OrderContext.js
+│   │   ├── NotificationContext.js
+│   │   └── ToastContext.js        # New: Context for toast notifications
+│   ├── hooks/
+│   │   ├── useAuth.js             # Implemented for Firebase auth
+│   │   ├── useLocation.js
+│   │   ├── useOrders.js
+│   │   ├── useNotifications.js
+│   │   └── useToast.js            # New: Hook for toast notifications
+│   ├── navigation/
+│   │   ├── AppNavigator.js        # Implemented with auth flow
+│   │   ├── AuthNavigator.js
+│   │   ├── CustomerNavigator.js   # Implemented basic version
+│   │   ├── DriverNavigator.js     # Implemented basic version
+│   │   └── AffiliateNavigator.js  # Implemented basic version
+│   ├── screens/
+│   │   ├── auth/
+│   │   │   ├── WelcomeScreen.js
+│   │   │   ├── LoginScreen.js     # Implemented with phone auth
+│   │   │   ├── OTPVerificationScreen.js # Implemented
+│   │   │   └── UserTypeScreen.js  # Implemented
+│   │   ├── common/
+│   │   │   ├── ProfileScreen.js
+│   │   │   ├── NotificationsScreen.js
+│   │   │   ├── SettingsScreen.js
+│   │   │   └── LoadingScreen.js   # New: Loading screen component
+│   │   ├── customer/
+│   │   │   ├── HomeScreen.js      # Implemented basic version
+│   │   │   ├── OrdersScreen.js    # Implemented basic version
+│   │   │   ├── ProfileScreen.js   # Implemented basic version
+│   │   │   ├── BookTruckScreen.js
+│   │   │   ├── TruckSelectionScreen.js
+│   │   │   ├── OrderTrackingScreen.js
+│   │   │   ├── OrderHistoryScreen.js
+│   │   │   ├── PaymentScreen.js
+│   │   │   └── RateDriverScreen.js
+│   │   ├── driver/
+│   │   │   ├── HomeScreen.js      # Implemented basic version
+│   │   │   ├── JobsScreen.js      # New: Jobs listing screen
+│   │   │   ├── ProfileScreen.js   # Implemented basic version
+│   │   │   ├── ActiveTripScreen.js
+│   │   │   ├── EarningsScreen.js
+│   │   │   ├── TruckManagementScreen.js
+│   │   │   ├── WalletScreen.js
+│   │   │   └── ReferralScreen.js
+│   │   └── affiliate/
+│   │       ├── HomeScreen.js      # Implemented basic version
+│   │       ├── ReferralsScreen.js # Implemented basic version
+│   │       ├── ProfileScreen.js   # Implemented basic version
+│   │       ├── DashboardScreen.js
+│   │       ├── WithdrawalScreen.js
+│   │       └── PerformanceScreen.js
+│   ├── services/
+│   │   ├── api.js
+│   │   ├── location.js
+│   │   ├── maps.js
+│   │   ├── notifications.js
+│   │   ├── storage.js
+│   │   └── payments.js
+│   ├── utils/
+│   │   ├── constants.js
+│   │   ├── helpers.js
+│   │   ├── validation.js          # Implemented with phone formatting
+│   │   ├── formatters.js
+│   │   ├── permissions.js
+│   │   └── errorHandler.js        # New: Error handling utility
+│   └── config/
+│       ├── colors.js              # Updated with user type colors
+│       ├── theme.js               # Implemented for React Native Paper
+│       ├── config.js
+│       └── firebase.js            # New: Firebase configuration
+└── eas.json
