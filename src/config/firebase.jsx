@@ -9,8 +9,8 @@ import { getStorage } from 'firebase/storage';
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBsG4ws9geMOZDiIQ9lLwlDopGUYwBgBSc",
-  authDomain: "my-truck-bcd1d.firebaseapp.com",
+  apiKey: "API_KEY",
+  authDomain: "AUTH_DOMAIN",
   projectId: "my-truck-bcd1d",
   storageBucket: "my-truck-bcd1d.firebasestorage.app",
   messagingSenderId: "177310607889",
